@@ -63,17 +63,13 @@ export default function Navbar() {
           <a
             href="#contact"
             className="
-              rounded-full
-              bg-cyan-400
-              px-5
-              py-3
-              font-semibold
-              text-black
-              transition-all
-              duration-300
-              hover:scale-105
-              active:scale-95
-            "
+rounded-full
+bg-cyan-400
+px-4
+py-2
+text-sm
+font-semibold
+"
           >
             Оставить заявку
           </a>

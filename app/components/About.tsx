@@ -51,7 +51,7 @@ const advantages = [
             которые помогают бизнесу получать клиентов.
           </p>
   
-          <div className="grid auto-rows-[260px] gap-8 md:grid-cols-4">
+          <div className="grid md:auto-rows-[260px] gap-8 md:grid-cols-4">
         
           {advantages.map((item) => (
   <FeatureCard

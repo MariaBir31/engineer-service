@@ -11,7 +11,7 @@ export default function HeroMockup() {
           backdrop-blur-xl
           shadow-2xl shadow-cyan-500/10
           overflow-hidden
-          rotate-[-5deg]
+          rotate-[-4deg]
           transition
           duration-500
           hover:rotate-[-1deg]

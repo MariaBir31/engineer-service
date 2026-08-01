@@ -18,14 +18,29 @@ export default function Hero({ hero }: HeroProps) {
         <section 
          id="home"
          className="hero-grid flex min-h-screen items-center pt-20 pb-24">
-        <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-8">
+        <div
+  className="
+    mx-auto
+    flex
+    w-full
+    max-w-7xl
+    flex-col
+    gap-16
+    px-6
+    pt-10
+    md:flex-row
+    md:items-center
+    md:justify-between
+    md:px-8
+  "
+>
         <div className="max-w-xl">
 
-          <h1 className="text-6xl font-bold leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
             {hero.title}
           </h1>
 
-          <p className="mt-6 text-xl text-zinc-400">
+          <p className="mt-6 text-base md:text-xl text-zinc-400">
             {hero.subtitle}
           </p>
 
@@ -44,7 +59,17 @@ export default function Hero({ hero }: HeroProps) {
              </a>
             </div>
         </div>
-        <div className="relative flex items-center justify-center -ml-10">
+        <div
+  className="
+    relative
+    mt-8
+    flex
+    w-full
+    justify-center
+    md:mt-0
+    md:w-auto
+  "
+>
 
   <Glow />
 
@@ -65,8 +90,9 @@ export default function Hero({ hero }: HeroProps) {
     "
   />
 
-  <HeroCards />
-
+<div className="scale-[0.72] sm:scale-[0.85] lg:scale-100">
+    <HeroCards />
+</div>
 </div>
       </div>
     </section>
