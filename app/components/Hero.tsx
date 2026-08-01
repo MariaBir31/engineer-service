@@ -1,34 +1,74 @@
+import Button from "./Button";
+import Glow from "./Glow";
+import HeroCards from "./HeroCards";
+
+
 type HeroProps = {
-    title: string;
+    hero: {
+      title: string;
+      subtitle: string;
+      button: string;
+      telegram: string;
+      telegramLink: string;
+    };
   };
-  
-  export default function Hero({ title }: HeroProps) {
-      return (
-    <section className="min-h-screen flex items-center">
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-8">
+
+export default function Hero({ hero }: HeroProps) {
+  return (
+        <section 
+         id="home"
+         className="hero-grid flex min-h-screen items-center pt-20 pb-24">
+        <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-8">
         <div className="max-w-xl">
-        <p className="mb-4 text-cyan-400 uppercase tracking-[6px]">
-            Landing Studio
-          </p>
 
           <h1 className="text-6xl font-bold leading-tight">
-          {title}
+            {hero.title}
           </h1>
 
           <p className="mt-6 text-xl text-zinc-400">
-            Landing pages для малого бизнеса.
+            {hero.subtitle}
           </p>
 
-          <button className="mt-10 rounded-full bg-cyan-400 px-8 py-4 font-semibold text-black">
-            Оставить заявку
-          </button>
+          <div className="mt-10 flex items-center gap-6">
+            <Button href="#contact">
+              {hero.button}
+            </Button>
 
+            <a
+     href={hero.telegramLink}
+     target="_blank"
+     rel="noopener noreferrer"
+     className="text-cyan-400 transition hover:text-cyan-300"
+            >
+             {hero.telegram} →
+             </a>
+            </div>
         </div>
+        <div className="relative flex items-center justify-center -ml-10">
 
-        <div className="h-[450px] w-[450px] rounded-3xl bg-zinc-800"></div>
+  <Glow />
 
+  <div
+    className="
+      absolute
+      top-10
+      right-24
+      h-[320px]
+      w-[500px]
+      rounded-3xl
+      border
+      border-white/5
+      bg-zinc-900/40
+      blur-[1px]
+      rotate-[6deg]
+      opacity-40
+    "
+  />
+
+  <HeroCards />
+
+</div>
       </div>
-
     </section>
   );
 }

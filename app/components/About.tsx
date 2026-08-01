@@ -1,27 +1,45 @@
 import FeatureCard from "./FeatureCard";
+import LightningIcon from "./icons/LightningIcon";
+import MonitorIcon from "./icons/MonitorIcon";
+import RocketIcon from "./icons/RocketIcon";
+import SupportIcon from "./icons/SupportIcon";
 
 const advantages = [
     {
-      title: "Быстро",
-      text: "Запускаем сайт всего за несколько дней.",
+      title: "Больше клиентов",
+      description:
+        "Создаем сайты, которые вызывают доверие и помогают получать новые заявки.",
+      icon: <LightningIcon />,
+      size: "large",
     },
     {
-      title: "Современно",
-      text: "Минималистичный дизайн и адаптивная верстка.",
+      title: "Быстрый запуск",
+      description:
+        "Первую версию сайта вы увидите уже через несколько дней.",
+      icon: <RocketIcon />,
+      size: "small",
     },
     {
-      title: "Под ключ",
-      text: "Берем на себя весь процесс разработки.",
+      title: "Адаптивный дизайн",
+      description:
+        "Ваш сайт идеально выглядит на телефоне, планшете и компьютере.",
+      icon: <MonitorIcon />,
+      size: "small",
     },
     {
-        title: "Поддержка",
-        text: "Помогаем после запуска сайта."
-      },
-  ];
+      title: "Заявки в Telegram",
+      description:
+        "Все обращения моментально приходят прямо в ваш Telegram.",
+      icon: <SupportIcon />,
+      size: "wide",
+    },
+  ] as const;
   
   export default function About() {
     return (
-      <section className="bg-zinc-900 py-32">
+      <section
+       id =  "about"
+       className="bg-zinc-900 py-32">
         <div className="mx-auto max-w-6xl px-8">
   
           <h2 className="mb-6 text-5xl font-bold">
@@ -33,13 +51,15 @@ const advantages = [
             которые помогают бизнесу получать клиентов.
           </p>
   
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid auto-rows-[260px] gap-8 md:grid-cols-4">
         
           {advantages.map((item) => (
   <FeatureCard
     key={item.title}
+    icon={item.icon}
     title={item.title}
-    text={item.text}
+    description={item.description}
+    size={item.size}
   />
 ))}
   
