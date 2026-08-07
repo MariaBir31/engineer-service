@@ -49,7 +49,7 @@ export default function Contact() {
 
         <div>
 
-          <p className="mb-4 text-sm uppercase tracking-[0.35em] text-cyan-400">
+          <p className="mb-4 text-sm uppercase tracking-[0.35em] text-yellow-400">
             CONTACT
           </p>
 
@@ -68,21 +68,21 @@ export default function Contact() {
           <div className="mt-12 space-y-5">
 
             <div className="flex items-center gap-3">
-              <div className="h-2 w-2 rounded-full bg-cyan-400" />
+              <div className="h-2 w-2 rounded-full bg-yellow-400" />
               <span className="text-zinc-300">
                 Бесплатная консультация
               </span>
             </div>
 
             <div className="flex items-center gap-3">
-              <div className="h-2 w-2 rounded-full bg-cyan-400" />
+              <div className="h-2 w-2 rounded-full bg-yellow-400" />
               <span className="text-zinc-300">
                 Обычно отвечаем за 15–30 минут
               </span>
             </div>
 
             <div className="flex items-center gap-3">
-              <div className="h-2 w-2 rounded-full bg-cyan-400" />
+              <div className="h-2 w-2 rounded-full bg-yellow-400" />
               <span className="text-zinc-300">
                 Первый концепт уже через несколько дней
               </span>
@@ -103,7 +103,7 @@ export default function Contact() {
             p-10
             backdrop-blur-xl
             shadow-2xl
-            shadow-cyan-500/10
+            shadow-yellow-500/10
           "
         >
           <form
@@ -126,7 +126,7 @@ export default function Contact() {
                 outline-none
                 transition
                 placeholder:text-zinc-500
-                focus:border-cyan-400
+                focus:border-yellow-400
               "
             />
 
@@ -145,7 +145,7 @@ export default function Contact() {
                 outline-none
                 transition
                 placeholder:text-zinc-500
-                focus:border-cyan-400
+                focus:border-yellow-400
               "
             />
 
@@ -165,7 +165,7 @@ export default function Contact() {
                 outline-none
                 transition
                 placeholder:text-zinc-500
-                focus:border-cyan-400
+                focus:border-yellow-400
               "
             />
 
@@ -174,7 +174,7 @@ export default function Contact() {
               className="
                 mt-4
                 rounded-2xl
-                bg-cyan-400
+                bg-yellow-400
                 py-4
                 text-lg
                 font-semibold
@@ -183,7 +183,7 @@ export default function Contact() {
                 duration-300
                 hover:scale-[1.02]
                 hover:shadow-xl
-                hover:shadow-cyan-500/20
+                hover:shadow-yellow-500/20
               "
             >
               Отправить заявку

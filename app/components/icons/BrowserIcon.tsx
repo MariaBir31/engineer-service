@@ -7,7 +7,7 @@ export default function BrowserIcon() {
         fill="none"
         stroke="currentColor"
         strokeWidth="2"
-        className="text-cyan-400"
+        className="text-yellow-400"
       >
         <rect x="3" y="4" width="18" height="16" rx="2" />
         <path d="M3 8h18" />

@@ -7,7 +7,7 @@ export default function MessageIcon() {
         fill="none"
         stroke="currentColor"
         strokeWidth="2"
-        className="text-cyan-400"
+        className="text-yellow-400"
       >
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
       </svg>

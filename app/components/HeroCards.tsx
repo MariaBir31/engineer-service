@@ -1,4 +1,4 @@
-import HeroMockup from "./HeroMockup";
+import HeroMockup from "../components/hero/HeroMockup";
 
 export default function HeroCards() {
   return (

@@ -1,30 +1,36 @@
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
-import Portfolio from "./components/Portfolio";
-import Footer from "./components/Footer";
+import Hero from "./components/hero/Hero";
+import WhyUs from "./components/why-us/WhyUs";
+import Contact from "./components/contact/Contact";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
 import Reveal from "./components/Reveal";
+import ServiceGrid from "./components/services/ServiceGrid";
+import Process from "./components/process/Process";
 
-import { hero } from "./data/site";
+import { site } from "./data/site";
 
 export default function Home() {
   return (
     <main>
       <Navbar />
 
-      <Hero hero={hero} />
+      <Hero hero={site.hero} />
+      
+      <Reveal>
+  <WhyUs />
+</Reveal>
 
       <Reveal>
-        <About />
+  <ServiceGrid />
       </Reveal>
 
-      <Reveal>
-        <Portfolio />
-      </Reveal>
 
       <Reveal>
-        <Contact />
+  <Process />
+</Reveal>
+
+      <Reveal>
+        <Contact  />
       </Reveal>
 
       <Footer />

@@ -7,7 +7,7 @@ export default function RocketIcon() {
         fill="none"
         stroke="currentColor"
         strokeWidth="2"
-        className="text-cyan-400"
+        className="text-yellow-400"
       >
         <path d="M4 13l6 6" />
         <path d="M14 3c4 1 7 4 8 8l-5 5-8-8 5-5z" />

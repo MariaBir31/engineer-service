@@ -9,14 +9,14 @@ type ButtonProps = {
       items-center
       justify-center
       rounded-full
-      bg-cyan-400
+      bg-yellow-400
       px-8
       py-4
       font-semibold
       text-black
       transition
       hover:scale-105
-      hover:bg-cyan-300
+      hover:bg-yellow-300
     `;
   
     if (href) {

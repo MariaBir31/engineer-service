@@ -89,7 +89,7 @@ type FeatureCardProps = {
           <div
             className="
               mt-8
-              text-cyan-400
+              text-yellow-400
               transition-transform
               duration-300
               group-hover:translate-x-2

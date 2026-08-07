@@ -9,7 +9,7 @@ export default function Navbar() {
         w-full
         border-b
         border-white/10
-        bg-black/60
+        bg-black/70
         backdrop-blur-xl
       "
     >
@@ -17,12 +17,11 @@ export default function Navbar() {
         className="
           mx-auto
           flex
-          h-16
+          h-20
           max-w-7xl
           items-center
           justify-between
           px-5
-          md:h-20
           md:px-8
         "
       >
@@ -31,46 +30,44 @@ export default function Navbar() {
         <a
           href="#home"
           className="
-            text-sm
+            text-lg
             font-bold
-            tracking-[3px]
-            text-cyan-400
+            tracking-[4px]
+            text-yellow-400
             transition
             hover:opacity-80
-            md:text-lg
-            md:tracking-[4px]
           "
         >
-          LANDING STUDIO
+          ИНЖЕНЕР
         </a>
 
-        {/* Меню (только ПК) */}
+        {/* Меню */}
 
-        <nav className="hidden items-center gap-10 text-sm md:flex">
+        <nav className="hidden items-center gap-10 md:flex">
           <a
             href="#home"
-            className="text-zinc-300 transition hover:text-cyan-400"
+            className="text-sm text-zinc-300 transition hover:text-yellow-400"
           >
             Главная
           </a>
 
           <a
             href="#about"
-            className="text-zinc-300 transition hover:text-cyan-400"
+            className="text-sm text-zinc-300 transition hover:text-yellow-400"
           >
-            О нас
+            Преимущества
           </a>
 
           <a
             href="#portfolio"
-            className="text-zinc-300 transition hover:text-cyan-400"
+            className="text-sm text-zinc-300 transition hover:text-yellow-400"
           >
-            Проекты
+            Услуги
           </a>
 
           <a
             href="#contact"
-            className="text-zinc-300 transition hover:text-cyan-400"
+            className="text-sm text-zinc-300 transition hover:text-yellow-400"
           >
             Контакты
           </a>
@@ -82,19 +79,17 @@ export default function Navbar() {
           href="#contact"
           className="
             rounded-full
-            bg-cyan-400
-            px-4
-            py-2
-            text-xs
+            bg-yellow-400
+            px-5
+            py-3
+            text-sm
             font-semibold
             text-black
-            transition
+            transition-all
             duration-300
             hover:scale-105
-            hover:shadow-lg
-            md:px-6
-            md:py-3
-            md:text-sm
+            hover:bg-yellow-300
+            hover:shadow-[0_0_30px_rgba(250,204,21,0.35)]
           "
         >
           Оставить заявку
